@@ -1,5 +1,46 @@
 //====================================================================================================
 
+.header {
+
+
+
+	&__container {
+		min-height: 104px;
+		display: flex;
+	}
+
+	&__logo {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.3;
+		letter-spacing: 0.1px;
+		color: #252B42;
+
+		flex: 1 1 223px;
+
+	}
+
+	&__menu {
+		flex: 1 1 223px;
+	}
+}
+.menu {
+
+	&__list {
+		display: flex;
+		gap:21px;
+		flex:1 1 auto;
+		justify-content: flex-start;
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+
+
 //====================================================================================================
 
 //Burger
