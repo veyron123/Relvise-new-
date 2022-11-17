@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/_head.htm',{
-"title":"HomePage"
-})
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221117140125">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">Relvise</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Product</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 		<main class="page">
 			<section class=" page__hero hero">
 				<div class="hero__container">
@@ -27,7 +47,7 @@
 						height: 100%;
 						top: 0;
 						left: 0;
-						object-fit: cover;" src="@img/back.jpg" alt="">
+						object-fit: cover;" src="img/back.jpg" alt="">
 				</div>
 			</section>
 			<section class="page__advanteges services">
@@ -35,21 +55,21 @@
 					<div class="services__items items-services">
 						<div class="items-services__item item">
 							<div class="item__icon">
-								<img src="@img/services-icons/carbon_tool-box1.svg" alt="">
+								<img src="img/services-icons/carbon_tool-box1.svg" alt="">
 							</div>
 							<h3 class="item__title">Environmental Consulting</h3>
 							<p class="item__text">We focus on ergonomics and meeting you where you work.</p>
 						</div>
 						<div class="items-services__item item">
 							<div class="item__icon">
-								<img src="@img/services-icons/ant-design_shop-twotone2.svg" alt="">
+								<img src="img/services-icons/ant-design_shop-twotone2.svg" alt="">
 							</div>
 							<h3 class="item__title">Finance and consultancy</h3>
 							<p class="item__text">Just type what's on your mind and we'll get you there.</p>
 						</div>
 						<div class="items-services__item item">
 							<div class="item__icon">
-								<img src="@img/services-icons/icn settings .icn-lg3.svg" alt="">
+								<img src="img/services-icons/icn settings .icn-lg3.svg" alt="">
 							</div>
 							<h3 class="item__title">Financial Services Consulting</h3>
 							<p class="item__text">the quick fox jumps over the lazy </p>
@@ -65,7 +85,7 @@
 					<div class="benefits__items ">
 						<div class="benefits__item item-benefits">
 							<div class="item-benefits__icon">
-								<img src="@img/benefits-icons/icn settings .icn-lg1.svg" alt="">
+								<img src="img/benefits-icons/icn settings .icn-lg1.svg" alt="">
 							</div>
 							<div class="item-benefits__value">972 +</div>
 							<div class="item-benefits__text">Consumer Products</div>
@@ -73,7 +93,7 @@
 
 						<div class="benefits__item item-benefits">
 							<div class="item-benefits__icon">
-								<img src="@img/benefits-icons/icn settings .icn-lg (1)2.svg" alt="">
+								<img src="img/benefits-icons/icn settings .icn-lg (1)2.svg" alt="">
 							</div>
 							<div class="item-benefits__value">181 +</div>
 							<div class="item-benefits__text">Financial Services</div>
@@ -81,7 +101,7 @@
 
 						<div class="benefits__item item-benefits">
 							<div class="item-benefits__icon">
-								<img src="@img/benefits-icons/fa-solid_award3.svg" alt="">
+								<img src="img/benefits-icons/fa-solid_award3.svg" alt="">
 							</div>
 							<div class="item-benefits__value">98%</div>
 							<div class="item-benefits__text">Environmental</div>
@@ -89,7 +109,7 @@
 
 						<div class="benefits__item item-benefits">
 							<div class="item-benefits__icon">
-								<img src="@img/benefits-icons/carbon_tool-box4.svg" alt="">
+								<img src="img/benefits-icons/carbon_tool-box4.svg" alt="">
 							</div>
 							<div class="item-benefits__value">746</div>
 							<div class="item-benefits__text">Business & Finance</div>
@@ -116,7 +136,7 @@
 							</a>
 
 							<a href="#" class="item-advice__image _ibg hero__img">
-								<img class="hero__image" src="@img/practice-advice/media.jpg" alt="">
+								<picture><source srcset="img/practice-advice/media.webp" type="image/webp"><img class="hero__image" src="img/practice-advice/media.jpg" alt=""></picture>
 							</a>
 						</article>
 						<article class="advice__item item-advice">
@@ -129,7 +149,7 @@
 							</a>
 
 							<a href="#" class="item-advice__image _ibg">
-								<img src="@img/practice-advice/media (1).jpg" alt="">
+								<img src="img/practice-advice/media (1).jpg" alt="">
 							</a>
 						</article>
 						<article class="advice__item item-advice">
@@ -142,7 +162,7 @@
 							</a>
 
 							<a href="#" class="item-advice__image _ibg">
-								<img src="@img/practice-advice/media (2).jpg" alt="">
+								<img src="img/practice-advice/media (2).jpg" alt="">
 							</a>
 						</article>
 						<article class="advice__item item-advice">
@@ -155,7 +175,7 @@
 							</a>
 
 							<a href="#" class="item-advice__image _ibg">
-								<img src="@img/practice-advice/media (3).jpg" alt="">
+								<img src="img/practice-advice/media (3).jpg" alt="">
 							</a>
 						</article>
 					</div>
@@ -171,10 +191,7 @@
 					</div>
 					<div class="whoweare__body">
 						<div class="whoweare__media">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/VfaZXlJso-s"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/VfaZXlJso-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 						<div class="whoweare__content content-whoweare">
 							<h3 class="content-whoweare__title">Most trusted in
@@ -185,7 +202,7 @@
 							<div class="content-whoweare__items">
 								<div class="content-whoweare__item item-whoweare">
 									<div class="item-whoweare__icon">
-										<img src="@img/whoweare-icons/icn settings .icn-md.svg" alt="">
+										<img src="img/whoweare-icons/icn settings .icn-md.svg" alt="">
 									</div>
 									<div class="item-whoweare__content">
 										<div class="item-whoweare__title">the quick fox jumps over the lazy
@@ -195,7 +212,7 @@
 								</div>
 								<div class="content-whoweare__item item-whoweare">
 									<div class="item-whoweare__icon">
-										<img src="@img/whoweare-icons/icn settings .icn-md.svg" alt="">
+										<img src="img/whoweare-icons/icn settings .icn-md.svg" alt="">
 									</div>
 									<div class="item-whoweare__content">
 										<div class="item-whoweare__title">the quick fox jumps over the lazy
@@ -212,12 +229,12 @@
 			<dig class="page__partners">
 				<div class="partners__container">
 					<div class="partners__items">
-						<div class="partners__item"><img src="@img/partners/col-md-3.png" alt=""></div>
-						<div class="partners__item"><img src="@img/partners/fa-brands_lyft.png" alt=""></div>
-						<div class="partners__item"><img src="@img/partners/fa-brands_pied-piper-hat.png" alt=""></div>
-						<div class="partners__item"><img src="@img/partners/fa-brands_stripe.png" alt=""></div>
-						<div class="partners__item"><img src="@img/partners/fa-brands_aws.png" alt=""></div>
-						<div class="partners__item"><img src="@img/partners/fa-brands_reddit-alien.png" alt=""></div>
+						<div class="partners__item"><picture><source srcset="img/partners/col-md-3.webp" type="image/webp"><img src="img/partners/col-md-3.png" alt=""></picture></div>
+						<div class="partners__item"><picture><source srcset="img/partners/fa-brands_lyft.webp" type="image/webp"><img src="img/partners/fa-brands_lyft.png" alt=""></picture></div>
+						<div class="partners__item"><picture><source srcset="img/partners/fa-brands_pied-piper-hat.webp" type="image/webp"><img src="img/partners/fa-brands_pied-piper-hat.png" alt=""></picture></div>
+						<div class="partners__item"><picture><source srcset="img/partners/fa-brands_stripe.webp" type="image/webp"><img src="img/partners/fa-brands_stripe.png" alt=""></picture></div>
+						<div class="partners__item"><picture><source srcset="img/partners/fa-brands_aws.webp" type="image/webp"><img src="img/partners/fa-brands_aws.png" alt=""></picture></div>
+						<div class="partners__item"><picture><source srcset="img/partners/fa-brands_reddit-alien.webp" type="image/webp"><img src="img/partners/fa-brands_reddit-alien.png" alt=""></picture></div>
 					</div>
 				</div>
 			</dig>
@@ -228,8 +245,7 @@
 							Newsletter
 						</h4>
 						<form action="#" class="subscribe__form form">
-							<input autocomplete="off" type="email" required name="form[]" data-error="Ошибка"
-								placeholder="Your Email" class="form__input">
+							<input autocomplete="off" type="email" required name="form[]" data-error="Ошибка" placeholder="Your Email" class="form__input">
 							<button type="submit" class="form__button">Subscribe</button>
 						</form>
 					</div>
@@ -249,7 +265,7 @@
 					<div class="support__items">
 						<div class="support__item item-support">
 							<div class="item-support__icon">
-								<img src="@img/support-icons/phone.svg" alt="">
+								<img src="img/support-icons/phone.svg" alt="">
 							</div>
 							<div class="item-support__emails">
 								<a href="" class="item-support__link">georgia.young@example.com</a>
@@ -261,7 +277,7 @@
 
 						<div class="support__item item-support item-support__active">
 							<div class="item-support__icon">
-								<img src="@img/support-icons/icn settings .icn-xl (1).svg" alt="">
+								<img src="img/support-icons/icn settings .icn-xl (1).svg" alt="">
 							</div>
 							<div class="item-support__emails">
 								<a href="" class="item-support__link">georgia.young@example.com</a>
@@ -273,7 +289,7 @@
 
 						<div class="support__item item-support">
 							<div class="item-support__icon">
-								<img src="@img/support-icons/letter.svg" alt="">
+								<img src="img/support-icons/letter.svg" alt="">
 							</div>
 							<div class="item-support__emails">
 								<a href="" class="item-support__link">georgia.young@example.com</a>
@@ -283,7 +299,7 @@
 							<a href="#" class="item-support__button"> Submit Request</a>
 						</div>
 
-						
+
 
 					</div>
 				</div>
@@ -303,85 +319,97 @@
 			<footer class="footer">
 				<div class="footer__background">
 					<div class="top-footer__container">
-					<div class="footer__top top-footer">
-							
-						<div class="top-footer__column">
-							<div class="top-footer__label">Company Info</div>
-							<div class="top-footer__text">About Us</div>
-							<div class="top-footer__text">Carrier</div>
-							<div class="top-footer__text">We are hiring</div>
-							<div class="top-footer__text">Blog</div>
-						</div>
-						<div class="top-footer__column">
-							<div class="top-footer__label">Legal</div>
-							<div class="top-footer__text">About Us</div>
-							<div class="top-footer__text">Carrier</div>
-							<div class="top-footer__text">We are hiring</div>
-							<div class="top-footer__text">Blog</div>
-						</div>
-						<div class="top-footer__column">
-							<div class="top-footer__label">Features</div>
-							<div class="top-footer__text">Business Marketing</div>
-							<div class="top-footer__text">User Analytic</div>
-							<div class="top-footer__text">Live Chat</div>
-							<div class="top-footer__text">Unlimited Support</div>
-						</div>
-						<div class="top-footer__column">
-							<div class="top-footer__label">Resources</div>
-							<div class="top-footer__text">IOS & Android</div>
-							<div class="top-footer__text">Watch a Demo</div>
-							<div class="top-footer__text">Customers</div>
-							<div class="top-footer__text">API</div>
-						</div>
-						<div class="top-footer__column">
-							<div class="top-footer__label">Get In Touch</div>						
-							<div class="top-footer__contacts contacts-top-footer">
-								<div class="contacts-top-footer__icon">
-									<img src="@img/footer-top/bx_bx-phone.svg" alt="">
-								</div>
-								<a href="tel:4805550103" class="contacts-top-footer__content contacts-top-footer__content_phone">(480) 555-0103</a>
+						<div class="footer__top top-footer">
+
+							<div class="top-footer__column">
+								<div class="top-footer__label">Company Info</div>
+								<div class="top-footer__text">About Us</div>
+								<div class="top-footer__text">Carrier</div>
+								<div class="top-footer__text">We are hiring</div>
+								<div class="top-footer__text">Blog</div>
 							</div>
-							<div class="top-footer__contacts contacts-top-footer">
-								<div class="contacts-top-footer__icon">
-									<img src="@img/footer-top/bx_bx-map.svg" alt="">
-								</div>
-								<a href="#" class="contacts-top-footer__content contacts-top-footer__content_map">4517 Washington Ave. Manchester, Kentucky 39495</a>
+							<div class="top-footer__column">
+								<div class="top-footer__label">Legal</div>
+								<div class="top-footer__text">About Us</div>
+								<div class="top-footer__text">Carrier</div>
+								<div class="top-footer__text">We are hiring</div>
+								<div class="top-footer__text">Blog</div>
 							</div>
-							<div class="top-footer__contacts contacts-top-footer">
-								<div class="contacts-top-footer__icon">
-									<img src="@img/footer-top/carbon_send-alt.svg" alt="">
+							<div class="top-footer__column">
+								<div class="top-footer__label">Features</div>
+								<div class="top-footer__text">Business Marketing</div>
+								<div class="top-footer__text">User Analytic</div>
+								<div class="top-footer__text">Live Chat</div>
+								<div class="top-footer__text">Unlimited Support</div>
+							</div>
+							<div class="top-footer__column">
+								<div class="top-footer__label">Resources</div>
+								<div class="top-footer__text">IOS & Android</div>
+								<div class="top-footer__text">Watch a Demo</div>
+								<div class="top-footer__text">Customers</div>
+								<div class="top-footer__text">API</div>
+							</div>
+							<div class="top-footer__column">
+								<div class="top-footer__label">Get In Touch</div>
+								<div class="top-footer__contacts contacts-top-footer">
+									<div class="contacts-top-footer__icon">
+										<img src="img/footer-top/bx_bx-phone.svg" alt="">
+									</div>
+									<a href="tel:4805550103" class="contacts-top-footer__content contacts-top-footer__content_phone">(480) 555-0103</a>
 								</div>
-								<a href="mailto:debra.holt@example.com"  class="contacts-top-footer__content contacts-top-footer__content_email">debra.holt@example.com</a>
+								<div class="top-footer__contacts contacts-top-footer">
+									<div class="contacts-top-footer__icon">
+										<img src="img/footer-top/bx_bx-map.svg" alt="">
+									</div>
+									<a href="#" class="contacts-top-footer__content contacts-top-footer__content_map">4517 Washington Ave. Manchester, Kentucky 39495</a>
+								</div>
+								<div class="top-footer__contacts contacts-top-footer">
+									<div class="contacts-top-footer__icon">
+										<img src="img/footer-top/carbon_send-alt.svg" alt="">
+									</div>
+									<a href="mailto:debra.holt@example.com" class="contacts-top-footer__content contacts-top-footer__content_email">debra.holt@example.com</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				</div>
-					<div class="footer__bottom bottom-footer">
-						<div class="bottom-footer__container">
-							<div class="bottom-footer__body">
-								<div class="bottom-footer__text">Made With Love By Figmaland All Right Reserved </div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__container">
+						<div class="bottom-footer__body">
+							<div class="bottom-footer__text">Made With Love By Figmaland All Right Reserved </div>
 							<div class="bottom-footer__icons">
-								<a href="" class="bottom-footer__link"><img src="@img/footer-bottom/ant-design_facebook-filled.svg" alt=""></a>
-								<a href="" class="bottom-footer__link"><img src="@img/footer-bottom/Vector (2).svg" alt=""></a>
-								<a href="" class="bottom-footer__link"><img src="@img/footer-bottom/Vector (3).svg" alt=""></a>
-								<a href="" class="bottom-footer__link"><img src="@img/footer-bottom/Vector (4).svg" alt=""></a>
+								<a href="" class="bottom-footer__link"><img src="img/footer-bottom/ant-design_facebook-filled.svg" alt=""></a>
+								<a href="" class="bottom-footer__link"><img src="img/footer-bottom/Vector (2).svg" alt=""></a>
+								<a href="" class="bottom-footer__link"><img src="img/footer-bottom/Vector (3).svg" alt=""></a>
+								<a href="" class="bottom-footer__link"><img src="img/footer-bottom/Vector (4).svg" alt=""></a>
 							</div>
-							</div>
-						</div>				
+						</div>
 					</div>
-				
 				</div>
-			</footer>
-			<!-- <div class="checkbox">
+
+	</div>
+	</footer>
+	<!-- <div class="checkbox">
 					<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 					<label for="c_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
 				</div> -->
-		</main>
-		@@include('html/_footer.htm',{})
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+		</div>
+	</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221117140125"></script>
 </body>
 
 </html>
